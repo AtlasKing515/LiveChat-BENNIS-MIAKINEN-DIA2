@@ -21,7 +21,7 @@ function toRelativeDate(now: any, date: any) {
         return `${Math.floor(diff / HOUR)}h ago`;
     }
 
-    return date.toLocaleString();
+    return "-";
 }
 
 
