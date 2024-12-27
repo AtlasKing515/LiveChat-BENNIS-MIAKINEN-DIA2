@@ -1,8 +1,8 @@
 # LiveChat – Système de Chat en Temps Réel
 
-Bienvenue dans le projet **LiveChat**, un système de chat en temps réel construit avec Node.js, React, et les WebSockets via la bibliothèque **socket.io**. L’objectif est de permettre à plusieurs utilisateurs d’échanger des messages instantanément dans différents canaux (channels), tout en offrant des statistiques d’utilisation (nombre de messages, top des canaux, etc.). 
+Système de chat en temps réel construit avec Node.js, React, et WebSockets via la bibliothèque **socket.io**. L’objectif est de permettre à plusieurs utilisateurs d’échanger des messages instantanément dans différents canaux (channels), tout en offrant des statistiques d’utilisation (nombre de messages, top des canaux, etc.). 
 
-Ce projet fait partie d’un travail scolaire visant à se familiariser avec les applications web temps réel et l’usage des technologies courantes dans l’écosystème JavaScript.
+Ce projet fait partie d’un travail scolaire visant à se familiariser avec les applications web et l’usage des technologies courantes dans l’écosystème JavaScript.
 
 ## Objectif et Motivation
 
