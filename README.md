@@ -16,7 +16,7 @@ Ce projet fait partie d’un travail scolaire visant à se familiariser avec les
 
 1. **Chat en temps réel** : Envoi et réception instantanés des messages via WebSockets.  
 2. **Gestion de canaux (channels)** : Possibilité de créer et rejoindre plusieurs canaux de discussion.  
-3. **Historique et pagination** : Consultation de l’historique des messages avec un système de pagination.  
+3. **Historique des discussions** : Consultation de l’historique des messages
 4. **Statistiques** : Visualisation des canaux les plus actifs et de la répartition des messages par jour sous forme de graphiques (Highcharts) et tableaux (AG Grid).  
 5. **Interface conviviale** : Interface web développée en React, conçue pour faciliter la navigation et l’interaction.
 
@@ -139,7 +139,7 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
    - Servez le contenu du dossier `build/` (du frontend) soit depuis un serveur statique (Nginx, Apache) ou via Express.
 
 3. **Environnement** :  
-   - Mettez à jour les variables d’environnement (URL de la base de données, ports, etc.) selon vos besoins.  
+   - Mettez à jour les variables (URL de la base de données, ports, etc.) selon vos besoins.  
    - Lancez la commande `npm start` (ou le script adéquat) dans le répertoire `backend` pour faire tourner l’API Node.js/Express et le service socket.io.
 
 ## Fonctionnement Interne du Chat en Temps Réel
