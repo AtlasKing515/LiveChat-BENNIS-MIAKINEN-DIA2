@@ -4,8 +4,6 @@ Bienvenue dans le projet **LiveChat**, un système de chat en temps réel constr
 
 Ce projet fait partie d’un travail scolaire visant à se familiariser avec les applications web temps réel et l’usage des technologies courantes dans l’écosystème JavaScript.
 
----
-
 ## Objectif et Motivation
 
 - **Objectif principal** : Développer une solution de chat temps réel, modulaire et évolutive, où la communication se fait via WebSockets pour un rafraîchissement instantané des messages.
@@ -14,8 +12,6 @@ Ce projet fait partie d’un travail scolaire visant à se familiariser avec les
   2. Comprendre le fonctionnement des WebSockets pour créer une expérience de messagerie fluide.  
   3. Mettre en pratique les compétences en React pour développer une interface réactive et ergonomique.
 
----
-
 ## Fonctionnalités Principales
 
 1. **Chat en temps réel** : Envoi et réception instantanés des messages via WebSockets.  
@@ -23,8 +19,6 @@ Ce projet fait partie d’un travail scolaire visant à se familiariser avec les
 3. **Historique et pagination** : Consultation de l’historique des messages avec un système de pagination.  
 4. **Statistiques** : Visualisation des canaux les plus actifs et de la répartition des messages par jour sous forme de graphiques (Highcharts) et tableaux (AG Grid).  
 5. **Interface conviviale** : Interface web développée en React, conçue pour faciliter la navigation et l’interaction.
-
----
 
 ## Architecture Générale
 
@@ -54,8 +48,6 @@ AtlasKing515-LiveChat/
    - Utilise **socket.io-client** pour se connecter au serveur en WebSocket.  
    - Affiche l’interface de chat et les canaux, gère l’envoi/réception de messages, et propose un tableau de bord statistique.
 
----
-
 ## Technologies et Bibliothèques
 
 - **Node.js** : Plateforme pour exécuter JavaScript côté serveur.  
@@ -66,8 +58,6 @@ AtlasKing515-LiveChat/
 - **React** : Bibliothèque JavaScript pour la création d’interfaces utilisateurs.  
 - **AG Grid** : Tableau de données réactif pour l’affichage des canaux ou autres statistiques.  
 - **Highcharts** : Librairie de visualisation de données pour afficher des graphiques (stats timeline, top canaux).  
-
----
 
 ## Installation et Configuration
 
@@ -112,8 +102,6 @@ npm install
 
 - Vérifiez le fichier `frontend/package.json` si vous souhaitez personnaliser votre configuration de build ou de démarrage.
 
----
-
 ## Exécution en Local
 
 1. **Démarrer le serveur** (dans un premier terminal) :
@@ -134,8 +122,6 @@ npm install
 
 Une fois les deux serveurs en marche, ouvrez votre navigateur à l’adresse [http://localhost:3000](http://localhost:3000). Vous pourrez alors choisir un nom d’utilisateur, rejoindre ou créer des canaux, et envoyer des messages en temps réel.
 
----
-
 ## Déploiement
 
 Pour déployer en production, vous pouvez suivre ces grandes étapes :
@@ -155,8 +141,6 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
 3. **Environnement** :  
    - Mettez à jour les variables d’environnement (URL de la base de données, ports, etc.) selon vos besoins.  
    - Lancez la commande `npm start` (ou le script adéquat) dans le répertoire `backend` pour faire tourner l’API Node.js/Express et le service socket.io.
-
----
 
 ## Fonctionnement Interne du Chat en Temps Réel
 
