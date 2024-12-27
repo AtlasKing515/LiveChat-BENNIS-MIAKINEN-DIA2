@@ -1,0 +1,50 @@
+.chat-content-container {
+    flex-grow: 1;
+    display: flex;
+
+    overflow:hidden;
+}
+
+.chat-content {
+    flex-direction: column;
+
+    flex-grow: 1;
+    display: flex;
+
+    overflow:hidden;
+}
+
+.chat-content-header {
+    flex-shrink: 0;
+}
+
+.chat-content-title {
+    margin-top: 12px;
+
+    align-items: center;
+    display: flex;
+}
+
+.chat-content-messages {
+    flex-grow: 1;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    flex-direction: column;
+    display: flex;
+}
+
+.chat-content-footer {
+    flex-shrink: 0;
+
+    display: flex;
+}
+
+
+/**/
+.chat-content-slash-icon {
+    margin-right: 10px;
+    color: #ddd;
+    display: flex;
+}

@@ -1,0 +1,34 @@
+.stats-content {
+    position: relative;
+
+    padding: 36px;
+
+    overflow:hidden;
+
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+}
+
+.close-btn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
+.stats-data-content {
+    position: relative;
+    flex-grow: 1;
+}
+
+.stats-data-content-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 0 12px;
+    
+    overflow: auto;
+}

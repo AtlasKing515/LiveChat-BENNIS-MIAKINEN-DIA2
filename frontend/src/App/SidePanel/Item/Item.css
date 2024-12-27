@@ -1,0 +1,43 @@
+.chat-channel-item-list {
+    padding: 10px 12px;
+
+    border-radius: 5px;
+
+    margin: 8px 0;
+
+    user-select: none;
+
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+.chat-channel-item-list.regular {
+    animation: slideIn 0.8s;
+}
+
+.chat-channel-item-list:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.chat-channel-item-list:active {
+    transform: scale(.95);
+}
+
+.chat-channel-item-list-icon {
+    margin-right: 6px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

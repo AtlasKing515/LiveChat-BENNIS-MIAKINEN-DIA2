@@ -1,0 +1,14 @@
+.prompt-textfield {
+    display: flex;
+    margin-top: 10px;
+}
+
+.prompt-input-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    font-size: 16px;
+}

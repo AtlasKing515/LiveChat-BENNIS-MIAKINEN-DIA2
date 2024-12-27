@@ -1,0 +1,27 @@
+.chat-form-input-container {
+    background: #eee;
+    padding: 8px 16px;
+    border-radius: 80px;
+
+
+    display: flex;
+}
+
+.chat-form-input {
+    flex-grow: 1;
+}
+
+.chat-form-submit-btn {
+    background: #111111;
+    border-radius: 50%;
+    padding: 6px;
+    
+    color: white;
+
+    transition: transform 0.1s;
+}
+
+
+.chat-form-submit-btn:active {
+    transform: scale(0.9);
+}

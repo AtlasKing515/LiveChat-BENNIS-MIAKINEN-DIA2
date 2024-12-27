@@ -1,0 +1,43 @@
+.app-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  overflow: hidden;
+
+  display: flex;
+}
+
+.app-content {
+  padding: 12px;
+
+  flex-grow: 1;
+  display: flex;
+
+  overflow:hidden;
+}
+
+input, button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+

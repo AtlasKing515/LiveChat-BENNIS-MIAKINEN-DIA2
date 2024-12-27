@@ -1,0 +1,53 @@
+.overlay-container {
+    position: absolute;
+
+    background: linear-gradient(rgb(210 213 215), rgba(248, 250, 252, 0));
+
+    top: 0;
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    display: flex;
+}
+
+.overlay-container {
+
+    justify-content: center;
+    align-items: center;
+    
+
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+}
+
+.overlay-textfield {
+
+    border-bottom: 2px solid #666;
+    padding-bottom: 8px;
+
+    flex-direction: row;
+    display: flex;
+}
+
+.overlay-input-content {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.overlay-submit-btn {
+    font-weight: bold;
+
+    transition: transform 0.2s;
+}
+
+.overlay-submit-btn:hover {
+    transform: scale(1.1);
+}
+
+.overlay-submit-btn:active {
+    transform: scale(0.9);
+}

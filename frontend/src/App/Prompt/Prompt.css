@@ -1,0 +1,43 @@
+.prompt-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    align-items: start;
+    justify-content: center;
+    display: flex;
+}
+
+.prompt {
+    min-width: 400px;
+    margin-top: 50px;
+    padding: 25px 35px;
+    background: white;
+    border-radius: 12px;
+
+
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.13);
+}
+
+.prompt-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.prompt-textfield {
+    display: flex;
+}
+
+.prompt-footer {
+    margin-top: 22px;
+
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+h4 {
+    margin-top: 0;
+}
