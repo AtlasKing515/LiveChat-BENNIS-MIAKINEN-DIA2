@@ -169,3 +169,49 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
 - **Mise à jour en temps réel** :  
   1. À la réception de l’événement `message` en provenance du serveur, le client met à jour immédiatement la liste des messages affichés.  
   2. React gère le rendu afin de refléter l’arrivée d’un nouveau message sans recharger la page.
+
+## Guide Utilisateur
+
+### Accueil et Choix du Nom d’Utilisateur
+
+- Au premier chargement de l’application, une page d’accueil (overlay) s’affiche pour inviter l’utilisateur à saisir un **nom d’utilisateur**.  
+- Les noms d’utilisateurs sont soumis à une longueur minimale et maximale (3 à 36 caractères).  
+
+### Interface de Chat
+
+- **Panneau latéral (SidePanel)** : liste les canaux disponibles.  
+- **Zone principale** : affiche la discussion courante ainsi que l’historique des messages.  
+- **Zone de saisie** : située en bas de la zone principale, permet de taper un message et de l’envoyer.
+
+### Ajout et Navigation entre les Canaux
+
+1. **Créer/Rejoindre un canal** : Cliquez sur le bouton “Join Channel”.
+
+2. **Basculer d’un canal à l’autre** : Cliquez sur le nom du canal dans la liste pour charger la conversation correspondante.  
+
+### Statistiques
+
+- Cliquez sur le bouton “Statistic” dans le panneau latéral pour ouvrir le tableau de bord statistique.  
+- Vous verrez :  
+  - **Un graphique** montrant le nombre de messages par jour et par canal.  
+  - **Un tableau** affichant le top des canaux selon le volume de messages.  
+
+
+## Aperçus visuels (Screenshots)
+
+1. **Page d’accueil – Choix du nom d’utilisateur**  
+   ![Overlay d’authentification](assets/screenshots/overlay-user-name.png)
+
+2. **Interface principale de chat**  
+   ![Interface de chat](assets/screenshots/chat-interface.png)  
+   - A : **Panneau latéral** avec la liste des canaux.  
+   - B : **Zone de discussion** pour le canal courant.  
+   - C : **Zone de saisie**.
+
+3. **Création d’un nouveau canal**  
+   ![Création canal](assets/screenshots/new-channel.png)
+
+4. **Statistiques**  
+   ![Statistiques des canaux](assets/screenshots/statistics.png)  
+   - Graphique (Highcharts) montrant l’évolution du nombre de messages par jour.  
+   - Tableau (AG Grid) listant les canaux les plus actifs.
