@@ -26,7 +26,7 @@ interface Props {
 
 const StatsContent: React.FC<Props> = ({ onClose }) => {
   const [topChannelsData, setTopChannelsData] = useState<ChannelStats[]>([]);
-  const [chartOptions, setChartOptions] = useState<any>({});
+  const [chartOptions, setChartOptions] = useState({});
 
   const topChannelsColumnDefs: ColDef<ChannelStats>[] = [
     { field: 'channel', sortable: true, filter: true },
