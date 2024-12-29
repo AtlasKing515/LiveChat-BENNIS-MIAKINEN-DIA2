@@ -29,9 +29,14 @@ Le projet est découpé en deux grandes parties :
 ```
 AtlasKing515-LiveChat/
     ├── backend/
-    │   ├── db/
-    │   ├── index.ts
-    │   └── ...
+    |   └── src/
+    │       ├── lib/
+    │       │   ├── api/
+    │       │   ├── db/
+    │       │   └── swagger.ts
+    │       ├── index.ts
+    │       ├── swagger.yaml
+    │       └── ...
     ├── frontend/
     │   ├── src/
     │   └── ...
