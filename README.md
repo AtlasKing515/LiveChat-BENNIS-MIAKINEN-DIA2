@@ -220,17 +220,17 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
 
 Ce projet a été réalisé de manière collaborative par trois membres dont les rôles et responsabilités se sont répartis de la façon suivante :
 
-- ### MIAKINEN Lucas (50% du travail) : Chef de projet & Lead Back-End
-  - Conception et mise en place de l’architecture du serveur Node.js/Express.  
-  - Implémentation et intégration de la base de données PostgreSQL.  
+- ### MIAKINEN Lucas (50% du travail)
+  - Conception et mise en place de l’architecture du serveur Node.js/Express
+  - Développement de l’interface utilisateur avec React (architecture des composants, styling). 
   - Gestion des WebSockets (Socket.io) côté serveur et coordination de l’ensemble des fonctionnalités.
 
-- ### BENNIS Marwan (30% du travail) : Lead Front-End
-  - Développement de l’interface utilisateur avec React (architecture des composants, styling).  
+- ### BENNIS Marwan (30% du travail)
+  - Implémentation et intégration de la base de données PostgreSQL.
   - Mise en place de la communication en temps réel (Socket.io Client).  
   - Intégration des bibliothèques tierces pour la visualisation des données (Highcharts, AG Grid).
 
-- ### D’ABOVILLE Edouard (20% du travail) : DevOps & Support
+- ### D’ABOVILLE Edouard (20% du travail)
   - Configuration et optimisation de l’environnement (scripts de déploiement, configuration du serveur).  
-  - Participation aux tests et à la validation de la qualité du code.  
+  - Participation aux tests et à la validation de la qualité du code.
   - Aide et support ponctuel sur l’intégration du front-end et la gestion de la base de données.
