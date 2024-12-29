@@ -215,3 +215,5 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
    ![Statistiques des canaux](assets/screenshots/statistics.png)  
    - Graphique (Highcharts) montrant l’évolution du nombre de messages par jour.  
    - Tableau (AG Grid) listant les canaux les plus actifs.
+
+---
