@@ -199,19 +199,38 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
 
 ## Aperçus visuels (Screenshots)
 
-1. **Page d’accueil – Choix du nom d’utilisateur**  
+### **Page d’accueil – Choix du nom d’utilisateur**  
    ![Overlay d’authentification](assets/screenshots/welcome.png)
 
-2. **Interface principale de chat**  
+### **Interface principale de chat**  
    ![Interface de chat](assets/screenshots/home-dev-channel.png)  
-   - A : **Panneau latéral** avec la liste des canaux.  
-   - B : **Zone de discussion** pour le canal courant.  
-   - C : **Zone de saisie**.
+   - **Panneau latéral** avec la liste des canaux.  
+   - **Zone de discussion** pour le canal courant.  
+   - **Zone de saisie**.
 
-3. **Création d’un nouveau canal**  
+### **Création d’un nouveau canal**  
    ![Création canal](assets/screenshots/add-channel-prompt-modal.png)
 
-4. **Statistiques**  
+### **Statistiques**  
    ![Statistiques des canaux](assets/screenshots/statistic-page.png)  
    - Graphique (Highcharts) montrant l’évolution du nombre de messages par jour.  
    - Tableau (AG Grid) listant les canaux les plus actifs.
+
+## Équipe et Contributeurs
+
+Ce projet a été réalisé de manière collaborative par trois membres dont les rôles et responsabilités se sont répartis de la façon suivante :
+
+- ### MIAKINEN Lucas (50% du travail) : Chef de projet & Lead Back-End
+  - Conception et mise en place de l’architecture du serveur Node.js/Express.  
+  - Implémentation et intégration de la base de données PostgreSQL.  
+  - Gestion des WebSockets (Socket.io) côté serveur et coordination de l’ensemble des fonctionnalités.
+
+- ### BENNIS Marwan (30% du travail) : Lead Front-End
+  - Développement de l’interface utilisateur avec React (architecture des composants, styling).  
+  - Mise en place de la communication en temps réel (Socket.io Client).  
+  - Intégration des bibliothèques tierces pour la visualisation des données (Highcharts, AG Grid).
+
+- ### D’ABOVILLE Edouard (20% du travail) : DevOps & Support
+  - Configuration et optimisation de l’environnement (scripts de déploiement, configuration du serveur).  
+  - Participation aux tests et à la validation de la qualité du code.  
+  - Aide et support ponctuel sur l’intégration du front-end et la gestion de la base de données.
