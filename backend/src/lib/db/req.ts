@@ -1,3 +1,4 @@
+import { StoredMessage } from '../api/message.js';
 import sql from './db.js';
 
 async function initDB() {
@@ -21,7 +22,7 @@ async function resetDB() {
  * @param {number} page - Numéro de la page (0 pour la première page, 1 pour la deuxième, etc.).
  * @returns {Promise<Array>} - Liste des messages.
  */
-async function getChannelMessages(channelName, page = 0) {
+async function getChannelMessages(channelName: string, page = 0) {
     const limit = 50;
     const offset = page * limit;
 
@@ -42,15 +43,13 @@ async function getChannelMessages(channelName, page = 0) {
     }
 }
 
+
 /**
  * Fonction pour insérer un message dans un canal donné.
- * @param {string} channel - Nom du canal.
- * @param {object} param1 - Objet contenant le nom de l'utilisateur et le message.
- * @param {string} param1.username - Nom de l'utilisateur.
- * @param {string} param1.body - Contenu du message.
+ * @param {StoredMessage} param1 - Objet contenant les informations du message.
  * @returns {Promise<void>}
  */
-async function insertChannelMessage(channel, { username, body, createdAt = new Date() }) {
+async function insertChannelMessage({ channel, username, body, createdAt = new Date() }: StoredMessage) {
     console.log('Inserting message:', { channel, username, body, createdAt });
     try {
         await sql`

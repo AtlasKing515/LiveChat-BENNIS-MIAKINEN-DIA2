@@ -13,7 +13,6 @@ import Overlay from './Overlay/Overlay';
 import Prompt from './Prompt/Prompt';
 import { MessageItem } from 'api/message';
 import { Channel, ChannelMessage, ChannelsMap } from 'api/channel';
-import { Stats } from 'fs';
 import StatsContent from './StatsContent/StatsContent';
 
 const client = new Client();
