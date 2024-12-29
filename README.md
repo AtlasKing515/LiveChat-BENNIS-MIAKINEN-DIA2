@@ -200,20 +200,18 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
 ## Aperçus visuels (Screenshots)
 
 1. **Page d’accueil – Choix du nom d’utilisateur**  
-   ![Overlay d’authentification](assets/screenshots/overlay-user-name.png)
+   ![Overlay d’authentification](assets/screenshots/welcome.png)
 
 2. **Interface principale de chat**  
-   ![Interface de chat](assets/screenshots/chat-interface.png)  
+   ![Interface de chat](assets/screenshots/home-dev-channel.png)  
    - A : **Panneau latéral** avec la liste des canaux.  
    - B : **Zone de discussion** pour le canal courant.  
    - C : **Zone de saisie**.
 
 3. **Création d’un nouveau canal**  
-   ![Création canal](assets/screenshots/new-channel.png)
+   ![Création canal](assets/screenshots/add-channel-prompt-modal.png)
 
 4. **Statistiques**  
-   ![Statistiques des canaux](assets/screenshots/statistics.png)  
+   ![Statistiques des canaux](assets/screenshots/statistic-page.png)  
    - Graphique (Highcharts) montrant l’évolution du nombre de messages par jour.  
    - Tableau (AG Grid) listant les canaux les plus actifs.
-
----
