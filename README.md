@@ -39,6 +39,10 @@ AtlasKing515-LiveChat/
     │       └── ...
     ├── frontend/
     │   ├── src/
+    │   │   ├── api/
+    │   │   ├── App/
+    │   │   ├── components/
+    │   │   └── ...
     │   └── ...
     └── README.md
 ```
