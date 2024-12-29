@@ -238,11 +238,12 @@ Ce projet a été réalisé de manière collaborative par trois membres dont les
   - Gestion des WebSockets (Socket.io) côté serveur et coordination de l’ensemble des fonctionnalités.
 
 - ### BENNIS Marwan (30% du travail)
+  - Configuration et optimisation de l’environnement (scripts de déploiement, configuration du serveur).  
   - Implémentation et intégration de la base de données PostgreSQL.
   - Mise en place de la communication en temps réel (Socket.io Client).  
-  - Intégration des bibliothèques tierces pour la visualisation des données (Highcharts, AG Grid).
+  
 
 - ### D’ABOVILLE Edouard (20% du travail)
-  - Configuration et optimisation de l’environnement (scripts de déploiement, configuration du serveur).  
+  - Intégration des bibliothèques tierces pour la visualisation des données (Highcharts, AG Grid).
   - Participation aux tests et à la validation de la qualité du code.
   - Aide et support ponctuel sur l’intégration du front-end et la gestion de la base de données.
