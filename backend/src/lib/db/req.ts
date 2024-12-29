@@ -23,7 +23,7 @@ async function resetDB() {
  * @returns {Promise<Array>} - Liste des messages.
  */
 async function getChannelMessages(channelName: string, page = 0) {
-    const limit = 50;
+    const limit = 100;
     const offset = page * limit;
 
     try {
@@ -32,7 +32,7 @@ async function getChannelMessages(channelName: string, page = 0) {
                 (created_at AT TIME ZONE 'UTC') AT TIME ZONE 'Europe/Paris' AS created_at
         FROM messages
         WHERE channel = ${channelName}
-        ORDER BY created_at DESC
+        ORDER BY created_at ASC
         LIMIT ${limit}
         OFFSET ${offset};
       `;

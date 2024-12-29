@@ -6,8 +6,8 @@ const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 
-function toRelativeDate(now: any, date: any) {
-    const diff = now - date;
+function toRelativeDate(now: Date, date: Date) {
+    const diff = now.getTime() - date.getTime();
 
     if(diff < MINUTE) {
         return 'Just now';
@@ -21,7 +21,7 @@ function toRelativeDate(now: any, date: any) {
         return `${Math.floor(diff / HOUR)}h ago`;
     }
 
-    return "-";
+    return `${Math.floor(diff / DAY)}d ago`;
 }
 
 
@@ -30,6 +30,15 @@ interface Props extends MessageItem {
 }
 
 export default function Message({username, body, created_at, now}: Props) {
+    
+
+    if(typeof created_at === 'string') {
+        created_at = new Date(created_at);
+    }
+
+    console.log('Message render', body);
+    console.log('Message render', created_at);
+
     return (<div className="chat-message-item">
         <div className='chat-message-item-header'>
             <div className="chat-message-item-username">
