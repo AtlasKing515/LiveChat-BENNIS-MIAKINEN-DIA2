@@ -42,6 +42,7 @@ AtlasKing515-LiveChat/
    - Fait office de serveur, écoute sur le port 8080.  
    - Gère les événements WebSockets pour l’échange de messages.  
    - Communique avec PostgreSQL pour stocker et récupérer les messages, et pour fournir des statistiques.
+   - Expose une documentation automatisée via Swagger pour visualiser et tester les endpoints.
 
 2. **Frontend** : 
    - Application React (port par défaut 3000 en développement).  
@@ -53,11 +54,12 @@ AtlasKing515-LiveChat/
 - **Node.js** : Plateforme pour exécuter JavaScript côté serveur.  
 - **Express** : Framework web pour Node.js.  
 - **TypeScript** : Langage de programmation qui ajoute du typage statique à JavaScript.  
-- **socket.io** : Bibliothèque pour gérer les WebSockets de manière simple et efficace.  
+- **Socket.io** : Bibliothèque pour gérer les WebSockets de manière simple et efficace.  
 - **PostgreSQL** : Base de données relationnelle utilisée pour stocker les messages.  
 - **React** : Bibliothèque JavaScript pour la création d’interfaces utilisateurs.  
 - **AG Grid** : Tableau de données réactif pour l’affichage des canaux ou autres statistiques.  
 - **Highcharts** : Librairie de visualisation de données pour afficher des graphiques (stats timeline, top canaux).  
+- **Swagger** : Génération automatique de la documentation d’API (fichiers YAML/JSON).
 
 ## Installation et Configuration
 
@@ -121,6 +123,16 @@ npm install
    Par défaut, l’application est accessible sur [http://localhost:3000](http://localhost:3000).  
 
 Une fois les deux serveurs en marche, ouvrez votre navigateur à l’adresse [http://localhost:3000](http://localhost:3000). Vous pourrez alors choisir un nom d’utilisateur, rejoindre ou créer des canaux, et envoyer des messages en temps réel.
+
+## Documentation de l’API (Swagger)
+Une fois le serveur backend démarré, accédez à l’URL suivante pour consulter et interagir avec la documentation Swagger :
+
+http://localhost:8080/api-docs
+
+Cela permet :
+- De visualiser les endpoints disponibles.
+- De tester les requêtes directement depuis l’interface Swagger.
+- D’obtenir des exemples de requêtes et réponses.
 
 ## Déploiement
 
