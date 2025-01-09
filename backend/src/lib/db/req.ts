@@ -49,12 +49,12 @@ async function getChannelMessages(channelName: string, page = 0) {
  * @param {StoredMessage} param1 - Objet contenant les informations du message.
  * @returns {Promise<void>}
  */
-async function insertChannelMessage({ channel, username, body, createdAt = new Date() }: StoredMessage) {
-    console.log('Inserting message:', { channel, username, body, createdAt });
+async function insertChannelMessage({ channel, username, body, created_at = new Date() }: StoredMessage) {
+    console.log('Inserting message:', { channel, username, body, created_at });
     try {
         await sql`
         INSERT INTO messages (channel, username, body, created_at)
-        VALUES (${channel}, ${username}, ${body}, (${createdAt} AT TIME ZONE 'Europe/Paris'));
+        VALUES (${channel}, ${username}, ${body}, (${created_at} AT TIME ZONE 'Europe/Paris'));
       `;
         console.log('Message inséré avec succès');
     } catch (error) {

@@ -45,6 +45,7 @@ class App extends React.Component {
 
     client.connect();
     client.onMessage((details: ChannelMessage) => {
+      console.log('Message received', details);
       this.addMessage(details.channel, details);
     });
   }

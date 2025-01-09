@@ -15,7 +15,7 @@ import http from 'http';
 import { Server, Socket } from "socket.io";
 import swaggerRouter from './lib/swagger';
 import postgres from 'postgres';
-import { Message } from './lib/api/message';
+import { Message, StoredMessage } from './lib/api/message';
 
 async function run() {
     console.log("Running server", new Date());
@@ -112,11 +112,11 @@ function runServer() {
 
                 const now = new Date();
 
-                const message = {
+                const message: StoredMessage = {
                     channel,
                     username: client.username,
                     body,
-                    createdAt: now,
+                    created_at: now,
                 };
 
                 // broadcast to all clients

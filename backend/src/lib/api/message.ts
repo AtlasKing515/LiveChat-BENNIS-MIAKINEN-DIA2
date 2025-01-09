@@ -5,7 +5,7 @@ interface Message {
 
 interface StoredMessage extends Message {
     username: string;
-    createdAt: Date;
+    created_at: Date;
 }
 
 export {
