@@ -1,5 +1,5 @@
 import { MessageItem } from "./message";
-
+// Channel
 class Channel {
 
     path: string;
