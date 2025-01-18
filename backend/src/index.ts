@@ -34,7 +34,7 @@ function runServer() {
     app.use(cors());
 
     /**
-     * Retrieves chat statistics from the database, including the top channels
+     * Retrieves chat statistics from the  database, including the top channels
      * by message count and a timeline of messages per day for each channel.
      *
      * @swagger
@@ -84,7 +84,7 @@ function runServer() {
         }
     });
 
-    // API Swagger /api-docs
+    // API Swagger  /api-docs
     app.use('/api-docs', swaggerRouter);
 
     const server = http.createServer(app);
