@@ -8,7 +8,7 @@ export default function ChatContent() {
   return (
     <div className="welcome-content-container">
       <div className="welcome-content">
-        <h1>Welcome to ChatApp</h1>
+        <h1>Welcome to LiveChat</h1>
         <p className="details">
             Click on 
             <span className="add-icon"><Icon name="add"/> </span>
