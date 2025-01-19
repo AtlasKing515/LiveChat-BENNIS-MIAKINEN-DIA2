@@ -1,0 +1,31 @@
+.welcome-content-container {
+    flex-grow: 1;
+    display: flex;
+
+    overflow: hidden;
+
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome-content {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.details {
+    font-weight: bold;
+
+    opacity: 0.5;
+
+    align-items: center;
+    display: flex;
+}
+
+.details .add-icon {
+    margin: 0 6px;
+    display: inline-block;
+}

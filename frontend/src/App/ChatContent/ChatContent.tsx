@@ -4,6 +4,7 @@ import Input from './FormInput/FormInput';
 import './ChatContent.css';
 import Message from './Message/Message';
 import { Channel } from 'api/channel';
+import WelcomeContent from './WelcomeContent/WelcomeContent';
 
 interface Props {
   channel: Channel | null;
@@ -35,7 +36,7 @@ export default function ChatContent({ channel, onSubmit }: Props) {
 
   if (channel == null) {
     return (
-      <p>Nothing to display</p>
+      <WelcomeContent />
     )
   }
 
