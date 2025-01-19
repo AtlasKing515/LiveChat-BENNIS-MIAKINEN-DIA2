@@ -7,12 +7,14 @@
     "start": "tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Lucas MIAKINEN,Marwan BENNIS, Edouard DABOVILLE",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
     "postgres": "^3.4.5",
-    "socket.io": "^4.8.0"
+    "socket.io": "^4.8.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "typescript": "^5.7.2"

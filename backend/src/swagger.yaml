@@ -1,0 +1,40 @@
+openapi: 3.0.0
+info:
+  title: Chat API
+  version: 1.0.0
+  description: API documentation for the chat server, including WebSocket and REST endpoints.
+servers:
+  - url: http://localhost:8080
+    description: Local server
+  - url: ws://localhost:8080
+    description: WebSocket server
+
+paths:
+  /ws:
+    get:
+      summary: WebSocket connection
+      description: |
+        Establish a WebSocket connection for real-time communication.
+        
+        **WebSocket URL**: `ws://localhost:8080`
+        
+        ### Supported Events
+        - **message**: Send a chat message. Example payload:
+          ```json
+          {
+            "channel": "string",
+            "body": "string"
+          }
+          ```
+        - **join-channel**: Join a chat channel with channel name (string) as payload.
+        - **set-username**: Set the username for the client with username (string) as payload.
+        - **get-messages**: Retrieve chat messages. Example payload:
+          ```json
+          {
+            "channel": "string",
+            "page": "number"
+          }
+          ```
+      responses:
+        '101':
+          description: Switching Protocols - WebSocket connection established.
