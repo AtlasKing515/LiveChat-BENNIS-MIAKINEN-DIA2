@@ -27,7 +27,7 @@ Le projet est découpé en deux grandes parties :
 - **frontend/** (React + socket.io-client)
 
 ```
-AtlasKing515-LiveChat/
+marwan-LiveChat/
     ├── backend/
     |   └── src/
     │       ├── lib/
@@ -244,20 +244,10 @@ Pour déployer en production, vous pouvez suivre ces grandes étapes :
 
 ## Équipe et Contributeurs
 
-Ce projet a été réalisé de manière collaborative par trois membres dont les rôles et responsabilités se sont répartis de la façon suivante :
+Ce projet a été réalisé de manière collaborative par trois membres :
 
-- ### MIAKINEN Lucas (50% du travail)
-  - Conception et mise en place de l’architecture du serveur Node.js/Express
-  - Développement de l’interface utilisateur avec React (architecture des composants, styling). 
-  - Gestion des WebSockets (Socket.io) côté serveur et coordination de l’ensemble des fonctionnalités.
+- ### MIAKINEN Lucas
 
-- ### BENNIS Marwan (30% du travail)
-  - Configuration et optimisation de l’environnement (scripts de déploiement, configuration du serveur).  
-  - Implémentation et intégration de la base de données PostgreSQL.
-  - Mise en place de la communication en temps réel (Socket.io Client).  
+- ### BENNIS Marwan  
   
-
-- ### D’ABOVILLE Edouard (20% du travail)
-  - Intégration des bibliothèques tierces pour la visualisation des données (Highcharts, AG Grid).
-  - Participation aux tests et à la validation de la qualité du code.
-  - Aide et support ponctuel sur l’intégration du front-end et la gestion de la base de données.
+- ### D’ABOVILLE Edouard
